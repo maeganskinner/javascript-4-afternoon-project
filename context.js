@@ -19,7 +19,18 @@
 */
   
 
-//Code Here
+var user = {
+  username: "Jim",
+  email: "Jimbob@gmail.com",
+  constructor(usernme){
+    this.username = "Jim";
+    this.email = "Jimbob@gmail.com"
+  }
+  
+}
+class username extends user {
+
+} 
 
 
 
@@ -41,7 +52,15 @@ class Animal {
   }
 }
 
-//Code Here
+class Animal1 {
+  constructor (name, species, food) {
+    new.name = "Rowdy"
+    new.species = "Corgi"
+    new.food = "steak"
+    
+  }
+  
+}
 
 
 
@@ -56,12 +75,15 @@ function sayHi(greeting) {
 }
 
 let who = {
-  name: 'Scuba Steve',
-  age: 35,
-  location: 'Belize'
+  name: 'Jane Doe',
+  age: 25,
+  location: 'Mexico'
 }
 
-//Code Here
+var whoSayHi = unboundwhoSayHi.bind(module);
+console.log(boundwhoSayHi());
+
+
 
 
 
@@ -76,7 +98,7 @@ function whatIsThis() {
 }
 
 // uncomment the line below and tell us what the context of "this" is for whatIsThis()
-//let context1 = ???
+let context1 = ???
 
 let product = {
   name: 'snake plant',
@@ -87,7 +109,7 @@ let product = {
 let func = whatIsThis.bind(product)
 
 // uncomment the line below and tell us what the context of "this" is when we invoke func
-//let context2 = ???
+let context2 = ???
 
 let vacation = {
   location: 'Hawaii',
@@ -98,7 +120,7 @@ let vacation = {
 }
 
 // uncomment the line below and tell us what the context of "this" is when we invoke vacation.whatIsThis
-//let context3 = ???
+let context3 = ???
 
 
 class Family {
@@ -116,4 +138,4 @@ class Family {
 let family1 = new Family(2, 4, 1)
 
 // uncomment the line below and tell us what the context of "this" is for the instance of Family created above.
-//let context4 = ???
+let context4 = ???

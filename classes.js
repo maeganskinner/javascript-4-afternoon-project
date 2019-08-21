@@ -29,7 +29,20 @@
   Call your class Employee and receive all the data in the constructor in the order listed above.
 */
 
-//Code Here
+class Employees{
+  constructor(first_name, last_name, email, age){
+      this.first_name = first_name;
+      this.last_name = last_name;
+      this.email = email;
+      this.age = age;
+      this.makeWidget = function(){
+          return first_name + ' ' + last_name + ' Widget';
+  }
+  }
+}var user01 = new Employee('Maegan', 'Skinner','mskinner@devmtn.com',25);
+
+
+  
 
 
 ////////// PROBLEM 2 //////////
@@ -47,7 +60,26 @@
   Call your new class Manager
 */
 
-//Code Here
+
+ class Manager extends Employee {
+   constructor( first_name, last_name, email, age, reports){
+    this.first_name = first_name;
+    this.last_name = last_name;
+    this.email = email;
+    this.age = age;
+    this.reports = reports[];
+    this.makeWidget = function(){
+        return first_name + ' ' + last_name + ' Widget';
+   }
+
+   hire(employees){
+     newEmployee = push.reports
+   }
+   fire(index){
+     removeEmployee = push.index
+   }
+ }
+
 
 
 ////////// PROBLEM 3 //////////
@@ -71,11 +103,30 @@
   Call your new class ProgressiveManager
 */
 
-//Code Here
+class ProgressiveManager extends Manager {
+  constructor( first_name, last_name, email, age, reports, title, bonus) {
+    this.first_name = first_name;
+    this.last_name = last_name;
+    this.email = email;
+    this.age = age;
+    this.reports = reports[];
+    this.title = title;
+    this.bonus = bonus;
+    this.makeWidget = function(){
+      return first_name + ' ' + last_name + ' Widget';
+    }
+hired(employees){
+}
+  }
+}
+  
+  
+  
 
 
 
 ////////// PROBLEM 4 - Black Diamond //////////
+
 
 /*
   Widget Co has a factory that makes widgets.
